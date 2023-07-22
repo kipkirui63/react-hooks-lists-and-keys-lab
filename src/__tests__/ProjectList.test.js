@@ -37,5 +37,6 @@ test("renders a <ProjectItem> for each project passed in as a prop", () => {
 
   for (const project of projects) {
     expect(screen.queryByText(project.name)).toBeInTheDocument();
+    // Add additional expectations for each project if needed
   }
 });
